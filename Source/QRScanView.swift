@@ -9,14 +9,14 @@
 import Foundation
 import UIKit
 
-class QRScanView: UIView, QRScanViewable {
-    var rectOfInterest: CGRect = CGRect.zero
-    lazy var beginScanHandle: (()->())? = { [unowned self] in
+public class QRScanView: UIView, QRScanViewable {
+    public var rectOfInterest: CGRect = CGRect.zero
+    lazy public var beginScanHandle: (()->())? = { [unowned self] in
         self.imageView.isHidden = false
         self.link?.isPaused = false
     }
     
-    lazy var finishScanHandle: (()->())? = {[unowned self] in
+    lazy public var finishScanHandle: (()->())? = {[unowned self] in
         self.link?.isPaused = true
         self.link?.remove(from: RunLoop.current, forMode:.commonModes)
         self.link?.invalidate()
@@ -81,7 +81,7 @@ class QRScanView: UIView, QRScanViewable {
         configuration()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     

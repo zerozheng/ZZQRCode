@@ -10,9 +10,9 @@ import Foundation
 import UIKit
 import CoreImage
 
-class QRCodeGenerator {
+public class QRCodeGenerator {
     
-    class open func generateImage(_ stringValue: String, avatarImage: UIImage?, avatarScale: CGFloat = 0.25, color: UIColor = UIColor.black, backColor: UIColor = UIColor.white) -> UIImage? {
+    class public func generateImage(_ stringValue: String, avatarImage: UIImage?, avatarScale: CGFloat = 0.25, color: UIColor = UIColor.black, backColor: UIColor = UIColor.white) -> UIImage? {
         
         // generate qrcode image
         let qrFilter = CIFilter(name: "CIQRCodeGenerator")!

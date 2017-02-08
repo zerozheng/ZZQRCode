@@ -10,9 +10,9 @@ import Foundation
 import CoreImage
 import UIKit
 
-class QRImageDetector {
+public class QRImageDetector {
     
-    class func detectImage(image: UIImage, completeHandle:((_ result:String?, _ error: Bool)->())?) {
+    public class func detectImage(image: UIImage, completeHandle:((_ result:String?, _ error: Bool)->())?) {
         guard let detector = CIDetector(ofType: CIDetectorTypeQRCode, context: nil, options: [CIDetectorAccuracy:CIDetectorAccuracyHigh]), let ciImage: CIImage = CIImage(image: image) else {
             if let _ = completeHandle {
                 completeHandle!(nil,true)
