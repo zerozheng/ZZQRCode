@@ -27,7 +27,7 @@ class QRScanView: UIView, QRScanViewable {
     lazy var link: CADisplayLink? = {
         let link = CADisplayLink(target: QRScanProxy(target:self), selector: #selector(QRScanProxy.linkHandle(link:)))
         link.add(to: RunLoop.current, forMode: .commonModes)
-        link.preferredFramesPerSecond = 50
+        //link.preferredFramesPerSecond = 50
         link.isPaused = true
         return link
     }()
