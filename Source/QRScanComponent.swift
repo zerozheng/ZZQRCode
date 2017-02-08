@@ -42,7 +42,7 @@ public class QRScanComponent: NSObject, QRScanComponentable {
         return layer
     }()
     
-    init?(types: [String] = [AVMetadataObjectTypeQRCode]) {
+    public init?(types: [String] = [AVMetadataObjectTypeQRCode]) {
         self.metadataObjectTypes = types
         super.init()
         guard let _ = session, let _ = layer else {

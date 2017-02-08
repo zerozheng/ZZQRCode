@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ZZQRCode"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "ZZQRCode, detect or generate a qrcode"
   s.description  = <<-DESC
 A qrcode framework, which is simple and easy for using, to detect or generate qrCode

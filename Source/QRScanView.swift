@@ -72,7 +72,7 @@ public class QRScanView: UIView, QRScanViewable {
         return imageView
     }()
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         self.layer.addSublayer(maskLayer)
         self.addSubview(self.box)

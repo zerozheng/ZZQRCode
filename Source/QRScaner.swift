@@ -18,7 +18,7 @@ open class QRScaner: NSObject, QRScanerable {
     
     public var component: QRScanComponentable
     
-    init?<T: QRScanViewable>(view: T, component: QRScanComponentable? = QRScanComponent(), didFoundResultHandle: ((String) -> ())?) where T: UIView {
+    public init?<T: QRScanViewable>(view: T, component: QRScanComponentable? = QRScanComponent(), didFoundResultHandle: ((String) -> ())?) where T: UIView {
         guard let _ = component else {
             return nil
         }
