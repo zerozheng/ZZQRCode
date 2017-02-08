@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eYv-1k-otB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="kr8-eo-R3z">
+            <objects>
+                <navigationController id="eYv-1k-otB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sCv-DY-NGY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mTS-NF-1N3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QSF-8a-D9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-692" y="107"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QRCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uvb-At-xgf">
+                                <rect key="frame" x="164" y="164" width="47" height="30"/>
+                                <state key="normal" title="scaner"/>
+                                <connections>
+                                    <action selector="scan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LfU-8t-WRY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhS-QI-vwo">
+                                <rect key="frame" x="138" y="283.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="ZQG-cR-jZD"/>
+                                    <constraint firstAttribute="width" constant="100" id="bGg-dg-4ia"/>
+                                </constraints>
+                                <state key="normal" image="test.png"/>
+                                <connections>
+                                    <action selector="detectWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LzQ-er-mw3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHQ-mX-P5x">
+                                <rect key="frame" x="154" y="537" width="67" height="30"/>
+                                <state key="normal" title="generator"/>
+                                <connections>
+                                    <action selector="generate" destination="BYZ-38-t0r" eventType="touchUpInside" id="pJm-bW-2Ho"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bhS-QI-vwo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2OM-2T-IgE"/>
+                            <constraint firstItem="bhS-QI-vwo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Hzq-N2-H2Z"/>
+                            <constraint firstItem="Uvb-At-xgf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q3k-t2-WbF"/>
+                            <constraint firstItem="OHQ-mX-P5x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SnJ-6o-xHv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OHQ-mX-P5x" secondAttribute="bottom" constant="100" id="VQO-Hj-tEi"/>
+                            <constraint firstItem="Uvb-At-xgf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="iOj-Oh-ehl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ppx-2l-pr5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="test.png" width="592" height="592"/>
+    </resources>
+</document>
