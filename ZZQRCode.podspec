@@ -9,7 +9,7 @@ A qrcode framework, which is simple and easy for using, to detect or generate qr
 
   s.homepage     = "https://github.com/zerozheng/ZZQRCode"
   s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-  s.author             = "zero"
+  s.author       = "zero"
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/zerozheng/ZZQRCode.git", :tag => s.version }
   s.source_files  = "Source"
