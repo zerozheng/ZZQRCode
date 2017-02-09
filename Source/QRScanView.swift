@@ -99,7 +99,18 @@ public class QRScanView: UIView, QRScanViewable {
         self.box.frame = CGRect(x: x, y: y, width: w, height: w)
         self.imageView.frame = CGRect(x: 10, y: 0, width: max(w-20,0), height: 1)
         self.label.frame = CGRect(x: x, y: y+w+10, width: w, height: 20)
+    }
+    
+    
+    func updateScanLine() {
+        let maxY = self.imageView.frame.maxY
+        let totalHeight = self.box.frame.height
         
+        if maxY < totalHeight {
+            self.imageView.frame.origin.y += 1
+        }else {
+            self.imageView.frame.origin.y = 0
+        }
     }
     
 }
@@ -117,14 +128,7 @@ class QRScanProxy {
             return
         }
         
-        let maxY = scanView.imageView.frame.maxY
-        let totalHeight = scanView.box.frame.height
-        
-        if maxY < totalHeight {
-            scanView.imageView.frame.origin.y += 1
-        }else {
-            scanView.imageView.frame.origin.y = 0
-        }
+        scanView.updateScanLine()
     }
     
 }
