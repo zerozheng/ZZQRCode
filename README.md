@@ -1,10 +1,15 @@
-# ZZQRCode
+##Description
 
 简单的`二维码`扫描器，不仅可以扫描二维码，生成二维码，还可以直接识别图片中的二维码
-![GitHub set up-w300](https://github.com/zerozheng/ZZQRCode/blob/master/Resources/generate.png)
-![GitHub set up-w300](https://github.com/zerozheng/ZZQRCode/blob/master/Resources/scan.png)
 
-sample code
+![License](https://img.shields.io/cocoapods/l/ImagePicker.svg?style=flat)
+![Platform](https://img.shields.io/cocoapods/p/ImagePicker.svg?style=flat)
+![Swift](https://img.shields.io/badge/%20in-swift%203.0-orange.svg)
+
+<img src="https://github.com/zerozheng/ZZQRCode/blob/master/Resources/generate.png" alt="ZZQRCode"/>
+<img src="https://github.com/zerozheng/ZZQRCode/blob/master/Resources/scan.png" alt="ZZQRCode"/>
+
+##Usage
 ```
     weak var delegate: ScanVCDelegate?
     
@@ -30,6 +35,12 @@ sample code
             qrScaner.startScanning()
         }
     }
+```
+
+##Installation
+
+```ruby
+pod 'ZZQRCode',    '~> 0.0.3'
 ```
 
 
