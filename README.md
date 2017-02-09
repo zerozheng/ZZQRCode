@@ -1,8 +1,8 @@
 # ZZQRCode
 
 简单的`二维码`扫描器，不仅可以扫描二维码，生成二维码，还可以直接识别图片中的二维码
-![](https://github.com/zerozheng/ZZQRCode/blob/master/Resources/generate.png)
-![](https://github.com/zerozheng/ZZQRCode/blob/master/Resources/scan.png)
+![GitHub set up-w300](https://github.com/zerozheng/ZZQRCode/blob/master/Resources/generate.png)
+![GitHub set up-w300](https://github.com/zerozheng/ZZQRCode/blob/master/Resources/scan.png)
 
 sample code
 ```
