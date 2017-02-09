@@ -6,8 +6,8 @@
 ![Platform](https://img.shields.io/cocoapods/p/ImagePicker.svg?style=flat)
 ![Swift](https://img.shields.io/badge/%20in-swift%203.0-orange.svg)
 
-<img src="https://github.com/zerozheng/ZZQRCode/blob/master/Resources/generate.png" alt="ZZQRCode"/>
-<img src="https://github.com/zerozheng/ZZQRCode/blob/master/Resources/scan.png" alt="ZZQRCode"/>
+<img src="https://github.com/zerozheng/ZZQRCode/blob/master/Resources/generate.png" alt="ZZQRCode" width=200/>
+<img src="https://github.com/zerozheng/ZZQRCode/blob/master/Resources/scan.png" alt="ZZQRCode" width=200/>
 
 ##Usage
 ```
